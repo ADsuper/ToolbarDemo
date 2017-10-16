@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
@@ -55,9 +56,33 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(mContext,Toolbar3_Activity.class));
                 break;
             case R.id.btn4:
+                startActivity(new Intent(mContext,Toolbar4_Activity.class));
                 break;
             case R.id.btn5:
+                startActivity(new Intent(mContext,Toolbar5_Activity.class));
                 break;
         }
+    }
+
+//    @Override
+//    protected boolean onPrepareOptionsPanel(View view, Menu menu) {
+//        if (menu.getClass().getSimpleName().equals("MenuBuilder")){
+//            try {
+//                Method method = menu.getClass().getDeclaredMethod("setOptionalIconsVisible",Boolean.class);
+//                method.setAccessible(true);
+//                method.invoke(menu,true);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        return super.onPrepareOptionsPanel(view, menu);
+//    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.toolbar_main_right_menu,menu);
+
+        return super.onCreateOptionsMenu(menu);
     }
 }

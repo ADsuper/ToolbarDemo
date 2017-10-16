@@ -8,6 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!-- 溢出菜单图标颜色，可以自己设置成任意的颜色-->
         <item name="colorControlNormal">@android:color/white</item>
+
+    </style>
+
+    <style name="ActionMenuTextAppearance" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/colorAccent</item><!--右侧 menu 字体颜色-->
+        <item name="android:textSize">18sp</item><!--  右侧 menu 字体大小-->
+        <item name="android:textStyle">normal</item><!--  右侧 menu 字体样式-->
+    </style>
+
+    <style name="right_menu_main" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionOverflowMenuStyle">@style/menu_main_overflow</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item><!--右侧 menu 字体颜色-->
+        <item name="android:textSize">18sp</item><!--  右侧 menu 字体大小-->
+        <item name="android:textStyle">normal</item><!--  右侧 menu 字体样式-->
+    </style>
+
+    <style name="menu_main_overflow" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">#555555</item>
     </style>
 
 </resources>

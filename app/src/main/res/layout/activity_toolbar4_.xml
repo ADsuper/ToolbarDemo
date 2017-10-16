@@ -13,16 +13,17 @@
         android:background="@color/colorPrimary"
         app:titleTextColor="@android:color/white"
         app:contentInsetStartWithNavigation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:theme="@style/ActionMenuTextAppearance"
         >
 
-        <android.support.v7.widget.ActionMenuView
-            android:id="@+id/actionMenuView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-        </android.support.v7.widget.ActionMenuView>
+       <View
+           android:id="@+id/view"
+           android:background="@android:color/white"
+           android:layout_width="1dp"
+           android:layout_height="25dp"></View>
         <TextView
-            android:layout_gravity="center"
-            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
             android:id="@+id/text_toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -22,6 +22,10 @@
         </activity>
         <activity android:name=".Toolbar3_Activity">
         </activity>
+        <activity android:name=".Toolbar4_Activity">
+        </activity>
+        <activity android:name=".Toolbar5_Activity">
+        </activity>
     </application>
 
 </manifest>

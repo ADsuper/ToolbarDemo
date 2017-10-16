@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:balloonberry="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/item11"-->
+        <!--android:icon="@mipmap/back"-->
+        <!--android:title="item1"-->
+        <!--app:showAsAction="never"-->
+        <!--&gt;</item>-->
+
+    <!--<item-->
+        <!--android:id="@+id/item12"-->
+        <!--android:icon="@mipmap/back"-->
+        <!--android:title="item1"-->
+        <!--app:showAsAction="never"-->
+        <!--&gt;</item>-->
+
+    <!--<item-->
+        <!--android:id="@+id/item13"-->
+        <!--android:icon="@mipmap/back"-->
+        <!--android:title="item1"-->
+        <!--app:showAsAction="never"-->
+        <!--&gt;</item>-->
+    <item
+        android:title="111"
+        android:id="@+id/menu_item"
+        android:icon="@mipmap/ic_subject_white"
+        balloonberry:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/btn_delete"
+                android:title="delete"
+                android:icon="@android:drawable/ic_delete"/>
+            <item
+                android:id="@+id/btn_message"
+                android:title="Message"
+                android:icon="@android:drawable/ic_dialog_alert"/>
+
+
+        </menu>
+    </item>
+
+
+</menu>
