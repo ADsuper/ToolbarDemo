@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".Toolbar5_Activity">
         </activity>
+        <activity android:name=".Toolbar6_Activity">
+        </activity>
     </application>
 
 </manifest>

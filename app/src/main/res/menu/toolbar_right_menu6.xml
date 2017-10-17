@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item1"
+        android:title="222"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        ></item>
+
+
+    <item
+        android:title="111"
+        android:id="@+id/menu_item2"
+        android:icon="@mipmap/ic_subject_white"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/btn_delete"
+                android:title="delete"
+                android:icon="@android:drawable/ic_delete"/>
+            <item
+                android:id="@+id/btn_message"
+                android:title="Message"
+                android:icon="@android:drawable/ic_dialog_alert"/>
+
+
+        </menu>
+    </item>
+
+
+</menu>

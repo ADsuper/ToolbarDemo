@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5})
+    @OnClick({R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn1:
@@ -61,28 +60,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn5:
                 startActivity(new Intent(mContext,Toolbar5_Activity.class));
                 break;
+            case R.id.btn6:
+                startActivity(new Intent(mContext,Toolbar6_Activity.class));
+                break;
         }
     }
 
-//    @Override
-//    protected boolean onPrepareOptionsPanel(View view, Menu menu) {
-//        if (menu.getClass().getSimpleName().equals("MenuBuilder")){
-//            try {
-//                Method method = menu.getClass().getDeclaredMethod("setOptionalIconsVisible",Boolean.class);
-//                method.setAccessible(true);
-//                method.invoke(menu,true);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        return super.onPrepareOptionsPanel(view, menu);
-//    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.toolbar_main_right_menu,menu);
-
-        return super.onCreateOptionsMenu(menu);
-    }
 }

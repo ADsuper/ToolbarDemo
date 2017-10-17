@@ -14,6 +14,9 @@ import butterknife.ButterKnife;
 
 import static io.github.adsuper.toolbardemo.R.id.toolbar;
 
+/**
+ * 使用 actionProvider 完全自定义右侧 menu
+ */
 public class Toolbar5_Activity extends AppCompatActivity {
 
     @BindView(toolbar)

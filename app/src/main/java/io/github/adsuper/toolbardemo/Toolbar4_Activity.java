@@ -12,6 +12,9 @@ import butterknife.ButterKnife;
 
 import static io.github.adsuper.toolbardemo.R.id.toolbar;
 
+/**
+ * 仿支付宝充值页面的 toolbar
+ */
 public class Toolbar4_Activity extends AppCompatActivity {
 
     @BindView(toolbar)
