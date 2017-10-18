@@ -28,6 +28,8 @@
         </activity>
         <activity android:name=".Toolbar6_Activity">
         </activity>
+        <activity android:name=".CollapsingToolbarLayout_1_Activity">
+        </activity>
     </application>
 
 </manifest>

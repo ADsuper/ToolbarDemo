@@ -42,26 +42,29 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6})
+    @OnClick({R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn_ctl_1})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn1:
-                startActivity(new Intent(mContext,Toolbar1_Activity.class));
+                startActivity(new Intent(mContext, Toolbar1_Activity.class));
                 break;
             case R.id.btn2:
-                startActivity(new Intent(mContext,Toolbar2_Activity.class));
+                startActivity(new Intent(mContext, Toolbar2_Activity.class));
                 break;
             case R.id.btn3:
-                startActivity(new Intent(mContext,Toolbar3_Activity.class));
+                startActivity(new Intent(mContext, Toolbar3_Activity.class));
                 break;
             case R.id.btn4:
-                startActivity(new Intent(mContext,Toolbar4_Activity.class));
+                startActivity(new Intent(mContext, Toolbar4_Activity.class));
                 break;
             case R.id.btn5:
-                startActivity(new Intent(mContext,Toolbar5_Activity.class));
+                startActivity(new Intent(mContext, Toolbar5_Activity.class));
                 break;
             case R.id.btn6:
-                startActivity(new Intent(mContext,Toolbar6_Activity.class));
+                startActivity(new Intent(mContext, Toolbar6_Activity.class));
+                break;
+            case R.id.btn_ctl_1:
+                startActivity(new Intent(mContext, CollapsingToolbarLayout_1_Activity.class));
                 break;
         }
     }
