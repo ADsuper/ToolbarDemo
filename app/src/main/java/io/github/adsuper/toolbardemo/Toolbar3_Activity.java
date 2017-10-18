@@ -27,14 +27,14 @@ public class Toolbar3_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toolbar3_);
+        setContentView(R.layout.activity_toolbar2_);
         ButterKnife.bind(this);
 
         //填充 menu 布局
-        getMenuInflater().inflate(R.menu.toolbar_left_menu3, mActionMenuView.getMenu());
+        getMenuInflater().inflate(R.menu.toolbar_left_menu, mActionMenuView.getMenu());
 
         MenuItem menuItem = mActionMenuView.getMenu().findItem(R.id.left_text_btn);
-//        设置 对应 item 填充布局的点击事件
+        //设置 对应 item 填充布局的点击事件
         menuItem.getActionView().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
